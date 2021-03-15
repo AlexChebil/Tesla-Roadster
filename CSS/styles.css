@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header nav {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header ul {
+  margin-left: 37em;
+}
+
+header li {
+  display: inline-block;
+  margin-right: 2em;
+}
+
+header .HeaderHeroIMG {
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */
