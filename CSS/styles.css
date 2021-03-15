@@ -5,17 +5,21 @@
           box-sizing: border-box;
 }
 
+header {
+  background-image: url(../IMAGES/hero.jpg);
+  width: 100%;
+  height: 60em;
+  background-size: 100% 115%;
+  background-repeat: no-repeat;
+  background-color: aqua;
+}
+
 header nav {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-header ul {
-  margin-left: 37em;
 }
 
 header li {
