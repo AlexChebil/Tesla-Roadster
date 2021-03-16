@@ -7,6 +7,7 @@
 body{
      font-family: 'Josefin Sans', sans-serif;
      overflow-x: hidden;
+     color: whitesmoke;
 }
 
 header{
@@ -92,6 +93,9 @@ header{
                animation: jump 1.5s ease-in-out infinite;
                font-size: 2em;
           }
+          a{
+               color: whitesmoke;
+          }
      }
      @keyframes jump {
           0%{
@@ -105,8 +109,30 @@ header{
                transform: translateY(15px);
           }
      }
+}
 
-
-
-
+main{
+     background-color: black;
+     padding: 5% 0%;
+     .spannedLi{
+          border: none;
+     }
+     li{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin: .75% 30%;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.144);
+          div{
+               display: inline-block;
+               span{
+                    font-size: .75em;
+                    
+               }   
+          }
+     }
+     iframe{
+          margin: 0% 35%;
+          
+     }
 }
