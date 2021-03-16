@@ -7,17 +7,20 @@
 
 body {
   font-family: 'Josefin Sans', sans-serif;
+  overflow-x: hidden;
 }
 
 header {
   background-image: url(../IMAGES/hero.jpg);
   width: 100%;
-  height: 60em;
+  height: 57em;
   background-size: 100% 115%;
   background-repeat: no-repeat;
+  color: whitesmoke;
 }
 
 header nav {
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,11 +84,55 @@ header .headerFooter .specs p {
 }
 
 header .headerFooter button {
+  color: whitesmoke;
   padding: 0em 2.5em;
   margin: 1em 0em;
   border-radius: 2em;
   border: none;
   background: transparent;
   border-bottom: 1px solid white;
+}
+
+header .animationSign {
+  display: inline-block;
+  margin: 0% 50%;
+  -webkit-animation: both;
+          animation: both;
+}
+
+header .animationSign .material-icons {
+  -webkit-animation: jump 1.5s ease-in-out infinite;
+          animation: jump 1.5s ease-in-out infinite;
+  font-size: 2em;
+}
+
+@-webkit-keyframes jump {
+  0% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+}
+
+@keyframes jump {
+  0% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -6,15 +6,19 @@
 
 body{
      font-family: 'Josefin Sans', sans-serif;
+     overflow-x: hidden;
 }
 
 header{
     background-image: url(../IMAGES/hero.jpg);
     width: 100%;
-    height: 60em;
+    height: 57em;
     background-size: 100% 115%;
     background-repeat: no-repeat;
+    color: whitesmoke;
+
      nav{
+          color: black;
           display: flex;
           justify-content: space-between;
           margin-top: 1em;
@@ -69,6 +73,7 @@ header{
                
           }
           button{
+               color: whitesmoke;
                padding: 0em 2.5em;
                margin: 1em 0em;
                border-radius: 2em;
@@ -79,8 +84,27 @@ header{
  
       
      }
+     .animationSign{
+          display: inline-block;
+          margin: 0% 50%;
+          animation: both;
+          .material-icons{
+               animation: jump 1.5s ease-in-out infinite;
+               font-size: 2em;
+          }
+     }
+     @keyframes jump {
+          0%{
+               transform: translateY(15px);
+          }
+          50%{
 
-
+               transform: translateY(0px);
+          }
+          100%{
+               transform: translateY(15px);
+          }
+     }
 
 
 
