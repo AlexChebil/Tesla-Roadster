@@ -4,6 +4,9 @@
      box-sizing: border-box;
 }
 
+body{
+     font-family: 'Josefin Sans', sans-serif;
+}
 
 header{
     background-image: url(../IMAGES/hero.jpg);
@@ -11,19 +14,75 @@ header{
     height: 60em;
     background-size: 100% 115%;
     background-repeat: no-repeat;
-    background-color: aqua;
      nav{
           display: flex;
-          justify-content: space-around;
+          justify-content: space-between;
+          margin-top: 1em;
+          font-size: .9em;
      }
     
      li{
           display: inline-block;
-          margin-right: 2em;
      }
 
+     .mainUl{
+          li{
+               margin: 0% 1em;
+          }
+     }
+     .secondUl{
+          li{
+               margin-left: 2em;
+          }
+     }
 
      .HeaderHeroIMG{
           width: 100%;   
      }
+
+     h1{
+          font-size: 3.5em;
+          text-align: center;
+          margin-top: 1.25em;
+          color: gray;
+     }
+     p{
+          text-align: center;
+          margin-top: 30%;
+          
+     }
+
+     .headerFooter{
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          .specs{
+               margin: auto 2.5%;
+               .material-icons{
+                    position: absolute;
+                    margin: -2% -2.5%;
+                    font-size: 1.5em;
+               }
+               p{
+                    margin-top: -5%;
+               }
+               
+          }
+          button{
+               padding: 0em 2.5em;
+               margin: 1em 0em;
+               border-radius: 2em;
+               border: none;
+               background: transparent;
+               border-bottom: 1px solid white;
+          }
+ 
+      
+     }
+
+
+
+
+
+
 }

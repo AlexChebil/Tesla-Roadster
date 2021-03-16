@@ -5,29 +5,87 @@
           box-sizing: border-box;
 }
 
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 header {
   background-image: url(../IMAGES/hero.jpg);
   width: 100%;
   height: 60em;
   background-size: 100% 115%;
   background-repeat: no-repeat;
-  background-color: aqua;
 }
 
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1em;
+  font-size: .9em;
 }
 
 header li {
   display: inline-block;
-  margin-right: 2em;
+}
+
+header .mainUl li {
+  margin: 0% 1em;
+}
+
+header .secondUl li {
+  margin-left: 2em;
 }
 
 header .HeaderHeroIMG {
   width: 100%;
+}
+
+header h1 {
+  font-size: 3.5em;
+  text-align: center;
+  margin-top: 1.25em;
+  color: gray;
+}
+
+header p {
+  text-align: center;
+  margin-top: 30%;
+}
+
+header .headerFooter {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .headerFooter .specs {
+  margin: auto 2.5%;
+}
+
+header .headerFooter .specs .material-icons {
+  position: absolute;
+  margin: -2% -2.5%;
+  font-size: 1.5em;
+}
+
+header .headerFooter .specs p {
+  margin-top: -5%;
+}
+
+header .headerFooter button {
+  padding: 0em 2.5em;
+  margin: 1em 0em;
+  border-radius: 2em;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid white;
 }
 /*# sourceMappingURL=styles.css.map */
