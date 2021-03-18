@@ -142,6 +142,8 @@ header .animationSign a {
 }
 
 main {
+  position: relative;
+  z-index: 0;
   background-color: black;
   padding: 5% 0%;
 }
@@ -151,6 +153,8 @@ main .spannedLi {
 }
 
 main li {
+  position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,5 +179,49 @@ main li div span {
 
 main iframe {
   margin: 0% 35%;
+  -webkit-animation: iframeAnim 1s ease-in-out infinite;
+          animation: iframeAnim 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes iframeAnim {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+}
+
+@keyframes iframeAnim {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+}
+
+main #backImg {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transform: translateY(-17%);
+          transform: translateY(-17%);
+  width: 90%;
+  border: 2px solid rgba(128, 128, 128, 0.26);
+  outline: 3px solid rgba(187, 187, 187, 0.075);
+  -webkit-animation: iframeAnim 1.5s ease-in-out 1;
+          animation: iframeAnim 1.5s ease-in-out 1;
+}
+
+main .backImgText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0% 5%;
+  margin-top: -20em;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -112,12 +112,17 @@ header{
 }
 
 main{
+     position: relative;
+     z-index: 0;
      background-color: black;
      padding: 5% 0%;
      .spannedLi{
           border: none;
      }
      li{
+          position: relative;
+
+          z-index: 2;
           display: flex;
           flex-direction: row;
           justify-content: space-between;
@@ -133,6 +138,38 @@ main{
      }
      iframe{
           margin: 0% 35%;
+          animation: iframeAnim 1s ease-in-out infinite;
+          
+
+          
+     }
+     @keyframes iframeAnim {
+          0%{
+               transform: translateY(50px);
+          }
+     }
+     #backImg{
+          position: relative;
+          z-index: 1;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          transform: translateY(-17%);
+          width: 90%;
+          border: 2px solid rgba(128, 128, 128, 0.26);
+          outline: 3px solid rgba(187, 187, 187, 0.075);
+          animation: iframeAnim 1.5s ease-in-out 1;
+          
+     }
+     .backImgText{
+          display: flex;
+          position: relative;
+          z-index: 2;
+          justify-content: space-evenly;
+          margin: 0% 5%;
+          margin-top: -20em;
+
+          
           
      }
 }
