@@ -9,13 +9,14 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   overflow-x: hidden;
   color: whitesmoke;
+  background-color: black;
 }
 
 header {
   background-image: url(../IMAGES/hero.jpg);
   width: 100%;
   height: 57em;
-  background-size: 100% 115%;
+  background-size: 100% 80%;
   background-repeat: no-repeat;
   color: whitesmoke;
 }
@@ -57,7 +58,8 @@ header h1 {
 
 header p {
   text-align: center;
-  margin-top: 30%;
+  margin-top: 27%;
+  font-size: .9em;
 }
 
 header .headerFooter {
@@ -71,12 +73,16 @@ header .headerFooter {
 }
 
 header .headerFooter .specs {
-  margin: auto 2.5%;
+  margin: 1.1% 2.5%;
+}
+
+header .headerFooter .specs h3 {
+  font-size: 1.2em;
 }
 
 header .headerFooter .specs .material-icons {
   position: absolute;
-  margin: -2% -2.5%;
+  margin: -2.75% -3.5%;
   font-size: 1.5em;
 }
 
@@ -104,7 +110,7 @@ header .animationSign {
 header .animationSign .material-icons {
   -webkit-animation: jump 1.5s ease-in-out infinite;
           animation: jump 1.5s ease-in-out infinite;
-  font-size: 2em;
+  font-size: 1.75em;
 }
 
 header .animationSign a {
@@ -146,6 +152,7 @@ main {
   z-index: 0;
   background-color: black;
   padding: 5% 0%;
+  margin: -12% auto;
 }
 
 main .spannedLi {
@@ -178,23 +185,29 @@ main li div span {
 }
 
 main iframe {
-  margin: 0% 35%;
-  -webkit-animation: iframeAnim 1s ease-in-out infinite;
-          animation: iframeAnim 1s ease-in-out infinite;
+  margin: 0% 28%;
+  margin-top: -5%;
 }
 
-@-webkit-keyframes iframeAnim {
+@-webkit-keyframes standardAnimation {
   0% {
     -webkit-transform: translateY(50px);
             transform: translateY(50px);
+    opacity: 0;
   }
 }
 
-@keyframes iframeAnim {
+@keyframes standardAnimation {
   0% {
     -webkit-transform: translateY(50px);
             transform: translateY(50px);
+    opacity: 0;
   }
+}
+
+main .anim {
+  -webkit-animation: standardAnimation 1.5s ease-in-out;
+          animation: standardAnimation 1.5s ease-in-out;
 }
 
 main #backImg {
@@ -203,13 +216,11 @@ main #backImg {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  -webkit-transform: translateY(-17%);
-          transform: translateY(-17%);
+  -webkit-transform: translateY(-16.5%);
+          transform: translateY(-16.5%);
   width: 90%;
   border: 2px solid rgba(128, 128, 128, 0.26);
   outline: 3px solid rgba(187, 187, 187, 0.075);
-  -webkit-animation: iframeAnim 1.5s ease-in-out 1;
-          animation: iframeAnim 1.5s ease-in-out 1;
 }
 
 main .backImgText {
