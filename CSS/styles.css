@@ -234,5 +234,86 @@ main .backImgText {
           justify-content: space-evenly;
   margin: 0% 5%;
   margin-top: -20em;
+  overflow-wrap: break-word;
+}
+
+main #interiorImg {
+  z-index: 3;
+  position: relative;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+main .interiorText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .interiorText div {
+  margin: auto 4.25%;
+}
+
+main #topImg_1 {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+main #topImg_2 {
+  position: relative;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: -70.2%;
+}
+
+@-webkit-keyframes activeAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes activeAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main #topImg_2.active {
+  display: block;
+  -webkit-animation: activeAnim;
+          animation: activeAnim;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  pointer-events: visible;
+}
+
+main .carTopText {
+  position: relative;
+  z-index: 5;
+  margin: 0% 20%;
+  margin-top: -15%;
+  -webkit-transform: translateY(-5em);
+          transform: translateY(-5em);
+}
+
+main .carTopText span {
+  font-size: .3em;
 }
 /*# sourceMappingURL=styles.css.map */
