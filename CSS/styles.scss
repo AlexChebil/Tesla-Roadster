@@ -208,6 +208,9 @@ main{
           margin-left: auto;
           margin-right: auto;
           width: 100%;
+          animation-name: activeAnim;
+          animation-duration: 2.5s;
+          animation-iteration-count: infinite;
 
      }
 
@@ -223,29 +226,42 @@ main{
           0%{
                opacity: 0;
           }
-          100%{
+          50%{
                opacity: 1;
           }
      }
-    
-     #topImg_2.active{
-          display: block;
-          animation: activeAnim;
-          animation-duration: 1s;
-          pointer-events: visible;
+
+     .trigger.active{
+          #topImg_2{
+               position: relative;
+               display: block;
+               transform: translateY(-4em);
+               animation-name: activeAnim;
+               animation-duration: 1.5s;               
+          }
+         
      }
      
      .carTopText{
-          position: relative;
-          z-index: 5;
-          margin: 0% 20%;
-          margin-top: -15%;
-          transform: translateY(-5em);
-          span{
+          h3,p{
                
-               font-size: .3em;
+               position: relative;
+               z-index: 5;
+               margin: 0% 20%;
+               margin-top: -14%;
+                    
           }
+          h3{
+               transform: translateY(-8em);
+               
+          }
+     }
 
+     .secondVideo{
+          margin-top: 25%;
+          p{
+               text-align: center;
+          }
      }
     
    

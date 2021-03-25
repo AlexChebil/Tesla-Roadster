@@ -266,6 +266,12 @@ main #topImg_1 {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  -webkit-animation-name: activeAnim;
+          animation-name: activeAnim;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 main #topImg_2 {
@@ -281,7 +287,7 @@ main #topImg_2 {
   0% {
     opacity: 0;
   }
-  100% {
+  50% {
     opacity: 1;
   }
 }
@@ -290,30 +296,39 @@ main #topImg_2 {
   0% {
     opacity: 0;
   }
-  100% {
+  50% {
     opacity: 1;
   }
 }
 
-main #topImg_2.active {
+main .trigger.active #topImg_2 {
+  position: relative;
   display: block;
-  -webkit-animation: activeAnim;
-          animation: activeAnim;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  pointer-events: visible;
+  -webkit-transform: translateY(-4em);
+          transform: translateY(-4em);
+  -webkit-animation-name: activeAnim;
+          animation-name: activeAnim;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
-main .carTopText {
+main .carTopText h3, main .carTopText p {
   position: relative;
   z-index: 5;
   margin: 0% 20%;
-  margin-top: -15%;
-  -webkit-transform: translateY(-5em);
-          transform: translateY(-5em);
+  margin-top: -14%;
 }
 
-main .carTopText span {
-  font-size: .3em;
+main .carTopText h3 {
+  -webkit-transform: translateY(-8em);
+          transform: translateY(-8em);
+}
+
+main .secondVideo {
+  margin-top: 25%;
+}
+
+main .secondVideo p {
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
