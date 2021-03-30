@@ -61,7 +61,7 @@ image2.forEach(image2=>{
 const trigger = document.querySelectorAll('.trigger');
 
 let optionsIO={
-     rootMargin: '100px',
+     rootMargin: '10px',
 }
 
 const observerrr = new IntersectionObserver(entries=>{
@@ -81,3 +81,9 @@ trigger.forEach(trigger=>{
 
 
 
+const hamburger = document.getElementById('hamburgerContainer');
+const nav = document.getElementById('nav');
+
+     hamburger.addEventListener('click', () =>{
+          nav.classList.toggle('active');
+     })

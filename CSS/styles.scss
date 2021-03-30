@@ -20,27 +20,29 @@ header{
     color: whitesmoke;
 
      nav{
-          color: black;
           display: flex;
+          color: black;
           justify-content: space-between;
           margin-top: 1em;
           font-size: .9em;
+          li{
+               display: inline-block;
+          }
+          .mainUl{
+               li{
+                    margin: 0% 1em;
+               }
+          }
+          .secondUl{
+               li{
+                    margin-left: 2em;
+               }
+          }
      }
     
-     li{
-          display: inline-block;
-     }
+    
 
-     .mainUl{
-          li{
-               margin: 0% 1em;
-          }
-     }
-     .secondUl{
-          li{
-               margin-left: 2em;
-          }
-     }
+   
 
      .HeaderHeroIMG{
           width: 100%;   
@@ -118,6 +120,31 @@ header{
           }
           100%{
                transform: translateY(15px);
+          }
+     }
+
+     .hamburgerContainer{
+          position: absolute;
+          background-color: aqua;
+          .hamburger{
+           width: 35px;
+           height: 5px;
+           background-color: black;
+           margin: 6px 0;
+          }
+     }
+     nav.active{
+          display: flex;
+          animation-name: activeAnim;
+          animation-duration: 1s; 
+          
+          li{
+               display: block;
+          }
+          ul{
+               background-color: rgba(255, 255, 255, 0.74);
+               border-radius: .3em;
+               border: 1px dashed rgba(155, 155, 155, 0.432);
           }
      }
 }
@@ -210,8 +237,6 @@ main{
           width: 100%;
           animation-name: activeAnim;
           animation-duration: 2.5s;
-          animation-iteration-count: infinite;
-
      }
 
      #topImg_2{
@@ -227,7 +252,7 @@ main{
                opacity: 0;
           }
           50%{
-               opacity: 1;
+               opacity: 0.1;
           }
      }
 
@@ -263,11 +288,17 @@ main{
                text-align: center;
           }
      }
+
+
+
     
-   
+    
 
 
      
     
      
 }
+
+
+
