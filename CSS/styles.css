@@ -12,6 +12,16 @@ body {
   background-color: black;
 }
 
+body button {
+  color: whitesmoke;
+  padding: 0em 2.5em;
+  margin: 1em 0em;
+  border-radius: 2em;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid white;
+}
+
 header {
   background-image: url(../IMAGES/hero.jpg);
   width: 100%;
@@ -88,16 +98,6 @@ header .headerFooter .specs .material-icons {
 
 header .headerFooter .specs p {
   margin-top: -5%;
-}
-
-header .headerFooter button {
-  color: whitesmoke;
-  padding: 0em 2.5em;
-  margin: 1em 0em;
-  border-radius: 2em;
-  border: none;
-  background: transparent;
-  border-bottom: 1px solid white;
 }
 
 header .animationSign {
@@ -358,7 +358,47 @@ main .secondVideo {
   margin-top: 25%;
 }
 
+main .secondVideo iframe {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 main .secondVideo p {
   text-align: center;
+}
+
+footer #verticalLine {
+  position: relative;
+  width: 1px;
+  height: 10em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  background-color: rgba(47, 47, 47, 0.404);
+}
+
+footer button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid rgba(70, 70, 70, 0.356);
+  font-size: .75em;
+  margin-bottom: 1.5%;
+}
+
+footer ul {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+footer ul li {
+  text-decoration: underline;
+  display: inline-block;
+  margin: 0% .5%;
+  font-size: .5em;
 }
 /*# sourceMappingURL=styles.css.map */
