@@ -248,7 +248,7 @@ main{
                opacity: 0;
           }
           50%{
-               opacity: 0.1;
+               opacity: 1;
           }
      }
 
@@ -258,7 +258,9 @@ main{
                display: block;
                transform: translateY(-4em);
                animation-name: activeAnim;
-               animation-duration: 1.5s;               
+               animation-duration: 1s; 
+               transition: ease-in-out; 
+                        
           }
          
      }

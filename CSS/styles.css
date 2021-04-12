@@ -318,7 +318,7 @@ main #topImg_2 {
     opacity: 0;
   }
   50% {
-    opacity: 0.1;
+    opacity: 1;
   }
 }
 
@@ -327,7 +327,7 @@ main #topImg_2 {
     opacity: 0;
   }
   50% {
-    opacity: 0.1;
+    opacity: 1;
   }
 }
 
@@ -338,8 +338,10 @@ main .trigger.active #topImg_2 {
           transform: translateY(-4em);
   -webkit-animation-name: activeAnim;
           animation-name: activeAnim;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
 }
 
 main .carTopText h3, main .carTopText p {

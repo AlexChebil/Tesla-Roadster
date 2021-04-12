@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,CAAC,GAAG,MAAM,SAAS,EAAE,KAAK,OAAO,SAAS,EAAE,KAAK;EAClD,AAAA,IAAI,CAAA;IACC,UAAU,EAAE,MAAM;IAClB,KAAK,EAAE,IAAI;IACX,IAAI,EAAE,GAAG;GAEb",
+    "sources": [
+        "MediaQ.scss"
+    ],
+    "names": [],
+    "file": "MediaQ.css"
+}
