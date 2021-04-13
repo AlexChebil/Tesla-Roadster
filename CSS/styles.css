@@ -25,8 +25,8 @@ body button {
 header {
   background-image: url(../IMAGES/hero.jpg);
   width: 100%;
-  height: 57em;
-  background-size: 100% 80%;
+  height: 65em;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   color: whitesmoke;
 }
@@ -68,8 +68,9 @@ header h1 {
 
 header p {
   text-align: center;
-  margin-top: 27%;
+  margin-top: 20.5%;
   font-size: .9em;
+  font-size: 1.25em;
 }
 
 header .headerFooter {
@@ -217,7 +218,9 @@ main li div span {
 }
 
 main iframe {
-  margin: 0% 28%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: -5%;
 }
 
@@ -298,10 +301,6 @@ main #topImg_1 {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  -webkit-animation-name: activeAnim;
-          animation-name: activeAnim;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
 }
 
 main #topImg_2 {
@@ -334,20 +333,24 @@ main #topImg_2 {
 main .trigger.active #topImg_2 {
   position: relative;
   display: block;
-  -webkit-transform: translateY(-4em);
-          transform: translateY(-4em);
+  -webkit-transform: translateY(-6em);
+          transform: translateY(-6em);
   -webkit-animation-name: activeAnim;
           animation-name: activeAnim;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-transition: ease-in-out;
   transition: ease-in-out;
+}
+
+main .trigger.active h3 {
+  margin-top: -18%;
 }
 
 main .carTopText h3, main .carTopText p {
   position: relative;
   z-index: 5;
-  margin: 0% 20%;
+  margin: 3% 20%;
   margin-top: -14%;
 }
 
