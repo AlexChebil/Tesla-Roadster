@@ -262,7 +262,12 @@ main{
                         
           }
           h3{
+               position: absolute;
                margin-top: -18%;
+          }
+          p{
+               position: absolute;
+               margin-top: -27%;
           }
 
          
@@ -283,7 +288,7 @@ main{
      }
 
      .secondVideo{
-          margin-top: 25%;
+          margin-top: 5%;
           iframe{
                display: block;
                position: relative;
@@ -299,6 +304,7 @@ main{
 }
 
 footer{
+     font-size: 1.5em;
      #verticalLine{
           position: relative;
           width: 1px;

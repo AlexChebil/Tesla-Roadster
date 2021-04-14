@@ -25,9 +25,11 @@ animationObjects.forEach(animationObjects=>{
 //----------------------------------------------------------------
 
 const trigger = document.querySelectorAll('.trigger');
+;
+
 
 let optionsIO={
-     rootMargin: '10px',
+     rootMargin: '100px',
 }
 
 const observerrr = new IntersectionObserver(entries=>{
@@ -44,6 +46,9 @@ const observerrr = new IntersectionObserver(entries=>{
 trigger.forEach(trigger=>{
      observerrr.observe(trigger);
 })
+
+
+
 
 //------------------------------------------
 

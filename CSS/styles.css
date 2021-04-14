@@ -344,7 +344,13 @@ main .trigger.active #topImg_2 {
 }
 
 main .trigger.active h3 {
+  position: absolute;
   margin-top: -18%;
+}
+
+main .trigger.active p {
+  position: absolute;
+  margin-top: -27%;
 }
 
 main .carTopText h3, main .carTopText p {
@@ -360,7 +366,7 @@ main .carTopText h3 {
 }
 
 main .secondVideo {
-  margin-top: 25%;
+  margin-top: 5%;
 }
 
 main .secondVideo iframe {
@@ -372,6 +378,10 @@ main .secondVideo iframe {
 
 main .secondVideo p {
   text-align: center;
+}
+
+footer {
+  font-size: 1.5em;
 }
 
 footer #verticalLine {
