@@ -1,8 +1,101 @@
 @media all and (min-width: 300px) and (max-width: 500px) {
   body {
     overflow-x: hidden;
-    width: 45em;
+    width: 100%;
     zoom: 50%;
+  }
+  body #wall {
+    display: none;
+  }
+  body #wall.active {
+    overflow: hidden;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 400%;
+    z-index: 1;
+    background-color: #8d8d8d;
+    -webkit-animation: wallAnimation .25s ease-in-out;
+            animation: wallAnimation .25s ease-in-out;
+  }
+  @-webkit-keyframes wallAnimation {
+    0% {
+      opacity: .1;
+      -webkit-transform: translateX(20em);
+              transform: translateX(20em);
+    }
+    40% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(0em);
+              transform: translateX(0em);
+    }
+  }
+  @keyframes wallAnimation {
+    0% {
+      opacity: .1;
+      -webkit-transform: translateX(20em);
+              transform: translateX(20em);
+    }
+    40% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(0em);
+              transform: translateX(0em);
+    }
+  }
+  header {
+    background-image: url(../IMAGES/hero-mobile.jpg);
+    background-size: 100%;
+  }
+  header #LogoImage {
+    display: block;
+    width: 40%;
+  }
+  header .navDivs {
+    display: none;
+  }
+  header .navDivs.active {
+    display: block;
+    -webkit-animation-name: activeAnim;
+            animation-name: activeAnim;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    z-index: 2;
+    font-size: 3em;
+  }
+  header .navDivs.active img {
+    display: none;
+  }
+  header .navDivs.active ul {
+    margin-left: -120%;
+  }
+  header .navDivs.active ul li {
+    display: block;
+    margin-bottom: 3em;
+    border-bottom: 1px solid black;
+  }
+  header .navDivs.active .secondUl {
+    position: absolute;
+    margin-top: 26em;
+    margin-left: -105%;
+  }
+  header .hamburgerContainer {
+    position: absolute;
+    width: 5em;
+    height: 4em;
+    right: 0;
+    z-index: 2;
+  }
+  header .hamburgerContainer .hamburger {
+    width: 3.5em;
+    height: .5em;
+    background-color: #494949;
+    margin: 10% 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*# sourceMappingURL=MediaQ.css.map */

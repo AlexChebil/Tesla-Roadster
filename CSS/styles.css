@@ -31,6 +31,10 @@ header {
   color: whitesmoke;
 }
 
+header #LogoImage {
+  display: none;
+}
+
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,38 +150,6 @@ header .animationSign a {
     -webkit-transform: translateY(15px);
             transform: translateY(15px);
   }
-}
-
-header .hamburgerContainer {
-  position: absolute;
-  background-color: aqua;
-}
-
-header .hamburgerContainer .hamburger {
-  width: 35px;
-  height: 5px;
-  background-color: black;
-  margin: 6px 0;
-}
-
-header nav.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-animation-name: activeAnim;
-          animation-name: activeAnim;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-}
-
-header nav.active li {
-  display: block;
-}
-
-header nav.active ul {
-  background-color: rgba(255, 255, 255, 0.74);
-  border-radius: .3em;
-  border: 1px dashed rgba(155, 155, 155, 0.432);
 }
 
 main {

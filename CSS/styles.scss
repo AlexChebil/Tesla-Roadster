@@ -22,6 +22,9 @@ header{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     color: whitesmoke;
+    #LogoImage{
+         display: none;
+     }
 
      nav{
           display: flex;
@@ -117,30 +120,7 @@ header{
           }
      }
 
-     .hamburgerContainer{
-          position: absolute;
-          background-color: aqua;
-          .hamburger{
-           width: 35px;
-           height: 5px;
-           background-color: black;
-           margin: 6px 0;
-          }
-     }
-     nav.active{
-          display: flex;
-          animation-name: activeAnim;
-          animation-duration: 1s; 
-          
-          li{
-               display: block;
-          }
-          ul{
-               background-color: rgba(255, 255, 255, 0.74);
-               border-radius: .3em;
-               border: 1px dashed rgba(155, 155, 155, 0.432);
-          }
-     }
+    
 }
 
 main{
@@ -340,6 +320,4 @@ footer{
      
 
 }
-
-
 

@@ -25,23 +25,23 @@ animationObjects.forEach(animationObjects=>{
 //----------------------------------------------------------------
 
 const trigger = document.querySelectorAll('.trigger');
-;
-
 
 let optionsIO={
      rootMargin: '100px',
 }
 
+
 const observerrr = new IntersectionObserver(entries=>{
-     entries.forEach(entry=>{
-          if (entry.isIntersecting) {
-               entry.target.classList.add('active');
-          }
-          else{
-               entry.target.classList.remove('active');
-          }
-     })
-},optionsIO)
+          entries.forEach(entry=>{
+               if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    console.log('activated');
+               }
+               else{
+                    entry.target.classList.remove('active');
+               }
+          })
+     },optionsIO)
 
 trigger.forEach(trigger=>{
      observerrr.observe(trigger);
@@ -50,11 +50,19 @@ trigger.forEach(trigger=>{
 
 
 
+
+
+
 //------------------------------------------
 
 const hamburger = document.getElementById('hamburgerContainer');
-const nav = document.getElementById('nav');
+const nav = document.querySelectorAll('.navDivs');
+const wall = document.getElementById('wall');
 
      hamburger.addEventListener('click', () =>{
-          nav.classList.toggle('active');
+          wall.classList.toggle('active');
+          for (let index = 0; index < nav.length; index++) {
+               nav[index].classList.toggle('active');
+          }
+               
      })
