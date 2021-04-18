@@ -60,7 +60,7 @@ const nav = document.querySelectorAll('.navDivs');
 const wall = document.getElementById('wall');
 
      hamburger.addEventListener('click', () =>{
-          wall.classList.toggle('active');
+          wall.classList.toggle('active'); 
           for (let index = 0; index < nav.length; index++) {
                nav[index].classList.toggle('active');
           }

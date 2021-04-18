@@ -1,4 +1,4 @@
-@media all and (min-width:300px) and (max-width:500px) {
+@media all and (max-width:500px) {
      body{
           overflow-x: hidden;
           width: 100%;
@@ -8,7 +8,6 @@
 
           }
           #wall.active{
-               overflow:hidden;
                position: absolute;
                display: block;
                width: 100%;
@@ -34,6 +33,11 @@
      header{
           background-image: url(../IMAGES/hero-mobile.jpg);
           background-size: 100%;
+          margin-bottom: 15%;
+          h1{
+               padding-top: 25%;
+               padding-bottom: 18%;
+          }
 
           #LogoImage{
                display: block;
@@ -54,7 +58,8 @@
                     display: none;
                }
                ul{
-                    margin-left: -120%;
+                    margin-left: -160%;
+                    display: inline-block;
                    
                     li{
                          display: block;
@@ -63,10 +68,9 @@
                     }
                }
                .secondUl{
-                    position: absolute;
-                    margin-top: 26em;
-                    margin-left: -105%;
-                       
+                    display: inline-block;
+                    margin-top: 27em;
+                    margin-left: -235%; 
                }
                
           }
@@ -76,6 +80,7 @@
                height: 4em;
                right: 0;
                z-index: 2;
+
                .hamburger{
                 width: 3.5em;
                 height: .5em;
@@ -85,6 +90,12 @@
                 margin-right: auto;
                }
           }
-          
-     }
+          .headerFooter{
+               .specs{
+                    .material-icons{
+                         margin: -3.75% -5.5%;;  
+                    }
+               }
+          }
+     }   
 }

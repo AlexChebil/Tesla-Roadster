@@ -1,4 +1,4 @@
-@media all and (min-width: 300px) and (max-width: 500px) {
+@media all and (max-width: 500px) {
   body {
     overflow-x: hidden;
     width: 100%;
@@ -8,7 +8,6 @@
     display: none;
   }
   body #wall.active {
-    overflow: hidden;
     position: absolute;
     display: block;
     width: 100%;
@@ -49,6 +48,11 @@
   header {
     background-image: url(../IMAGES/hero-mobile.jpg);
     background-size: 100%;
+    margin-bottom: 15%;
+  }
+  header h1 {
+    padding-top: 25%;
+    padding-bottom: 18%;
   }
   header #LogoImage {
     display: block;
@@ -70,7 +74,8 @@
     display: none;
   }
   header .navDivs.active ul {
-    margin-left: -120%;
+    margin-left: -160%;
+    display: inline-block;
   }
   header .navDivs.active ul li {
     display: block;
@@ -78,9 +83,9 @@
     border-bottom: 1px solid black;
   }
   header .navDivs.active .secondUl {
-    position: absolute;
-    margin-top: 26em;
-    margin-left: -105%;
+    display: inline-block;
+    margin-top: 27em;
+    margin-left: -235%;
   }
   header .hamburgerContainer {
     position: absolute;
@@ -96,6 +101,9 @@
     margin: 10% 0;
     margin-left: auto;
     margin-right: auto;
+  }
+  header .headerFooter .specs .material-icons {
+    margin: -3.75% -5.5%;
   }
 }
 /*# sourceMappingURL=MediaQ.css.map */
