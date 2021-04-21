@@ -8,6 +8,7 @@
     display: none;
   }
   body #wall.active {
+    overflow-y: hidden;
     position: absolute;
     display: block;
     width: 100%;
@@ -51,8 +52,9 @@
     margin-bottom: 15%;
   }
   header h1 {
-    padding-top: 25%;
-    padding-bottom: 18%;
+    padding-top: 16%;
+    padding-bottom: 12%;
+    font-size: 7em;
   }
   header #LogoImage {
     display: block;
@@ -67,6 +69,8 @@
             animation-name: activeAnim;
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
+    -webkit-transition: ease-out;
+    transition: ease-out;
     z-index: 2;
     font-size: 3em;
   }
@@ -74,8 +78,13 @@
     display: none;
   }
   header .navDivs.active ul {
-    margin-left: -160%;
-    display: inline-block;
+    margin-top: 1em;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transform: translateX(-5em);
+            transform: translateX(-5em);
   }
   header .navDivs.active ul li {
     display: block;
@@ -85,7 +94,7 @@
   header .navDivs.active .secondUl {
     display: inline-block;
     margin-top: 27em;
-    margin-left: -235%;
+    margin-left: -12em;
   }
   header .hamburgerContainer {
     position: absolute;
@@ -104,6 +113,39 @@
   }
   header .headerFooter .specs .material-icons {
     margin: -3.75% -5.5%;
+  }
+  main .trigger.active #topImg_2 {
+    -webkit-transform: translateY(-3em);
+            transform: translateY(-3em);
+  }
+}
+
+@media all and (min-width: 768px) {
+  header {
+    background-image: url(../IMAGES/hero-mobile.jpg);
+    background-size: 100% 120%;
+  }
+  header .mainUl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    white-space: nowrap;
+    margin-left: -5em;
+  }
+  header .navDivs img {
+    margin-top: 1.5em;
+  }
+  header .secondUl {
+    margin-left: -1em;
+  }
+  header h1 {
+    padding-bottom: 45%;
+  }
+  header .specs span {
+    margin-right: 1em;
   }
 }
 /*# sourceMappingURL=MediaQ.css.map */
