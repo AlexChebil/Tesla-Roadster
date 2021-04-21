@@ -133,10 +133,10 @@
         -ms-flex-pack: center;
             justify-content: center;
     white-space: nowrap;
-    margin-left: -5em;
+    margin-left: -6em;
   }
   header .navDivs img {
-    margin-top: 1.5em;
+    margin-top: 2.5em;
   }
   header .secondUl {
     margin-left: -1em;
@@ -144,8 +144,24 @@
   header h1 {
     padding-bottom: 45%;
   }
-  header .specs span {
-    margin-right: 1em;
+  header #speedSpan {
+    margin: -4% -5.5%;
+  }
+  main .backImgText {
+    margin-top: -15em;
+    padding-bottom: 1em;
+  }
+  main .trigger.active #topImg_2 {
+    -webkit-transform: translateY(-2em);
+            transform: translateY(-2em);
+  }
+  main .carTopText h3 {
+    -webkit-transform: translateY(-4em);
+            transform: translateY(-4em);
+  }
+  main .carTopText p {
+    -webkit-transform: translateY(2em);
+            transform: translateY(2em);
   }
 }
 /*# sourceMappingURL=MediaQ.css.map */

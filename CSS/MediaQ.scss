@@ -123,11 +123,11 @@
                     display: flex;
                     justify-content: center;
                     white-space: nowrap;
-                    margin-left: -5em;
+                    margin-left: -6em;
                }
                .navDivs{
                     img{
-                         margin-top: 1.5em;
+                         margin-top: 2.5em;
                     }
                     
                }
@@ -138,10 +138,28 @@
           h1{
                padding-bottom: 45%;
           }
-          .specs{
-               span{
-                    margin-right: 1em;
+          #speedSpan{
+               margin: -4% -5.5%;
+          }   
+     }
+     main{
+          .backImgText{
+               margin-top: -15em; 
+               padding-bottom: 1em; 
+          }
+          .trigger.active{
+               #topImg_2{
+                    transform: translateY(-2em);
                }
-          }    
+          }
+          .carTopText{
+               h3{
+                    transform: translateY(-4em);
+               }
+               p{
+                    transform: translateY(2em);
+               }
+               
+          }
      }
 }
