@@ -1,5 +1,4 @@
 const animationObjects = document.querySelectorAll('.animationConcerned');
-
 const options = {
      rootMargin: '100px' ,
      threshold: 0.1
@@ -21,6 +20,22 @@ const observer = new IntersectionObserver(entries =>{
 animationObjects.forEach(animationObjects=>{
      observer.observe(animationObjects);
 })
+//-----------------------------------------------------------------
+const topImage1 = document.getElementById('topImg_1');
+const topImageObserver = new IntersectionObserver(entries=>{
+     entries.forEach(entry=>{
+          if (entry.isIntersecting) {
+               topImage1.classList.add('animTopImage1');
+          }
+          else{
+               topImage1.classList.remove('animTopImage1');
+          }
+     })
+})
+  
+topImageObserver.observe(topImage1);
+
+
 
 //----------------------------------------------------------------
 
@@ -35,7 +50,6 @@ const observerrr = new IntersectionObserver(entries=>{
           entries.forEach(entry=>{
                if (entry.isIntersecting) {
                     entry.target.classList.add('active');
-                    console.log('activated');
                }
                else{
                     entry.target.classList.remove('active');

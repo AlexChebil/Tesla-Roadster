@@ -158,12 +158,13 @@ main{
           0%{
                transform: translateY(50px);
                opacity: 0;
-          }
-          
-        
+          }  
      }
      .anim{
           animation: standardAnimation 1.5s ease-in-out;
+     }
+     .animTopImage1{
+          animation: standardAnimation .75s ease-in-out;
      }
      #backImg{
           position: relative;

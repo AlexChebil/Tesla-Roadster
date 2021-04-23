@@ -217,6 +217,11 @@ main .anim {
           animation: standardAnimation 1.5s ease-in-out;
 }
 
+main .animTopImage1 {
+  -webkit-animation: standardAnimation .75s ease-in-out;
+          animation: standardAnimation .75s ease-in-out;
+}
+
 main #backImg {
   position: relative;
   z-index: 1;
