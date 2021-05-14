@@ -1,8 +1,173 @@
-@media all and (max-width: 500px) {
+@media all and (min-width: 300px) and (max-width: 400px) {
   body {
     overflow-x: hidden;
     width: 100%;
-    zoom: 50%;
+  }
+  body #wall {
+    display: none;
+  }
+  body #wall.active {
+    overflow-y: hidden;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 400%;
+    z-index: 1;
+    background-color: white;
+    -webkit-animation: wallAnimation .25s ease-in-out;
+            animation: wallAnimation .25s ease-in-out;
+  }
+  @-webkit-keyframes wallAnimation {
+    0% {
+      opacity: .1;
+      -webkit-transform: translateX(20em);
+              transform: translateX(20em);
+    }
+    40% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(0em);
+              transform: translateX(0em);
+    }
+  }
+  @keyframes wallAnimation {
+    0% {
+      opacity: .1;
+      -webkit-transform: translateX(20em);
+              transform: translateX(20em);
+    }
+    40% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(0em);
+              transform: translateX(0em);
+    }
+  }
+  header {
+    background-image: url(../IMAGES/hero-mobile.jpg);
+    background-size: 100% 73%;
+  }
+  header h1 {
+    padding-bottom: 16%;
+    font-size: 4em;
+  }
+  header #quickestCar {
+    white-space: pre;
+    font-size: 1em;
+  }
+  header #LogoImage {
+    display: block;
+    width: 40%;
+  }
+  header .navDivs {
+    display: none;
+  }
+  header .navDivs.active {
+    display: block;
+    -webkit-animation-name: activeAnim;
+            animation-name: activeAnim;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-transition: ease-out;
+    transition: ease-out;
+    z-index: 2;
+    font-size: 3em;
+  }
+  header .navDivs.active img {
+    display: none;
+  }
+  header .navDivs.active ul {
+    margin-top: 1em;
+    margin-left: -2em;
+  }
+  header .navDivs.active ul li {
+    display: block;
+    margin-bottom: 3em;
+    border-bottom: 1px solid black;
+  }
+  header .navDivs.active .secondUl {
+    background-color: aqua;
+    position: absolute;
+    bottom: -9em;
+  }
+  header .hamburgerContainer {
+    position: absolute;
+    width: 5em;
+    height: 4em;
+    right: 0;
+    z-index: 2;
+  }
+  header .hamburgerContainer .hamburger {
+    width: 3.5em;
+    height: .5em;
+    background-color: whitesmoke;
+    margin: 10% 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header .headerFooter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .headerFooter button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header .headerFooter .specs .material-icons {
+    margin: -9.75% -12.5%;
+  }
+  main {
+    -webkit-transform: translateY(-250px);
+            transform: translateY(-250px);
+  }
+  main .trigger.active p {
+    -webkit-transform: translateY(1em);
+            transform: translateY(1em);
+    font-size: 0.813em;
+    line-height: 1.1em;
+    letter-spacing: -0.064em;
+    font-weight: 400;
+  }
+  main .trigger.active h3 {
+    -webkit-transform: translateY(-7em);
+            transform: translateY(-7em);
+  }
+  main .trigger.active #topImg_2 {
+    -webkit-transform: translateY(-1em);
+            transform: translateY(-1em);
+  }
+  main ul {
+    margin-bottom: 10em;
+    margin-left: -40%;
+  }
+  main ul li {
+    width: 69%;
+  }
+  main .backImgText h2 {
+    line-height: 2;
+    letter-spacing: -0.066em;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.8rem;
+  }
+  main .backImgText p {
+    font-size: .7em;
+    line-height: 1em;
+    margin-top: 18em;
+  }
+  main .interiorText {
+    margin-bottom: 10%;
+  }
+}
+
+@media all and (min-width: 401px) and (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
   }
   body #wall {
     display: none;
@@ -53,8 +218,8 @@
   }
   header h1 {
     padding-top: 16%;
-    padding-bottom: 12%;
-    font-size: 7em;
+    padding-bottom: 30%;
+    font-size: 4em;
   }
   header #LogoImage {
     display: block;

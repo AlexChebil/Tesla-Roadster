@@ -1,8 +1,181 @@
-@media all and (max-width:500px) {
+@media all and (min-width:300px) and (max-width:400px) {
      body{
           overflow-x: hidden;
           width: 100%;
-          zoom: 50%;
+          //zoom: 50%;
+          #wall{
+               display: none;
+
+          }
+          #wall.active{
+               overflow-y: hidden;
+               position: absolute;
+               display: block;
+               width: 100%;
+               height: 400%;
+               z-index: 1;
+               background-color: rgb(255, 255, 255);
+               animation: wallAnimation .25s ease-in-out ;
+          }
+          @keyframes wallAnimation {
+               0%{
+                    opacity: .1;
+                    transform: translateX(20em);
+               }
+               40%{
+                    opacity: 1;
+               }
+               100%{
+                    
+                    transform: translateX(0em);
+               }
+          }
+     }
+     header{
+          background-image: url(../IMAGES/hero-mobile.jpg);
+          background-size: 100% 73%;
+          h1{
+               padding-bottom: 16%;
+               font-size: 4em;
+          }
+          #quickestCar{
+               white-space: pre;
+               font-size: 1em;
+          }
+
+          #LogoImage{
+               display: block;
+               width: 40%;
+           }
+
+         .navDivs{
+              display: none;
+          }
+          
+          .navDivs.active{
+               display: block;
+               animation-name: activeAnim;
+               animation-duration: 1s; 
+               transition: ease-out;
+               z-index: 2;
+               font-size: 3em;
+               img{
+                    display: none;
+               }
+               ul{
+                    margin-top: 1em;
+                    margin-left: -2em;                    
+                   
+                    li{
+                         display: block;
+                         margin-bottom: 3em;
+                         border-bottom: 1px solid rgb(0, 0, 0);
+                    }
+               }
+               .secondUl{
+                    background-color: aqua;
+                    position: absolute;
+                    bottom: -9em;
+               }
+               
+               
+          }
+          .hamburgerContainer{
+               position: absolute;
+               width: 5em;
+               height: 4em;
+               right: 0;
+               z-index: 2;
+
+               .hamburger{
+                width: 3.5em;
+                height: .5em;
+                background-color: whitesmoke;
+                margin: 10% 0;
+                margin-left: auto;
+                margin-right: auto;
+               }
+          }
+          .headerFooter{
+               flex-direction: column;
+               button{
+                    margin-left: auto;
+                    margin-right: auto;
+
+               }
+               
+               .specs{
+                    .material-icons{
+                         margin: -9.75% -12.5%; 
+                    }
+               }
+          }
+     }
+     main{
+          transform: translateY(-250px);
+          .trigger.active{
+               p{
+                    transform: translateY(1em);
+                    font-size: 0.813em;
+                    line-height: 1.1em;
+                    letter-spacing: -0.064em;
+                    font-weight: 400;
+               }
+               h3{
+                    transform: translateY(-7em);
+
+               }
+               #topImg_2{
+                    transform: translateY(-1em);
+               }
+          }
+          ul{
+               margin-bottom: 10em; 
+               margin-left: -40%;
+               li{
+                    width: 69%;
+               }                      
+          }
+          .backImgText{
+               h2{
+                    line-height: 2;
+                    letter-spacing: -0.066em;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-size: 1.8rem;
+               }
+
+               p{
+                    font-size: .7em;
+                    line-height: 1em;
+                    margin-top: 18em;
+               }
+          }
+          .interiorText{
+               margin-bottom: 10%;
+          }
+     }                
+     
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width:401px) and (max-width:500px) {
+     body{
+          overflow-x: hidden;
+          width: 100%;
+          //zoom: 50%;
           #wall{
                display: none;
 
@@ -34,11 +207,11 @@
      header{
           background-image: url(../IMAGES/hero-mobile.jpg);
           background-size: 100%;
-          margin-bottom: 15%;
+          margin-bottom: 15%; 
           h1{
                padding-top: 16%;
-               padding-bottom: 12%;
-               font-size: 7em;
+               padding-bottom: 30%;
+               font-size: 4em;
           }
 
           #LogoImage{
