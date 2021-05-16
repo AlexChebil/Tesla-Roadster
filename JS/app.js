@@ -3,6 +3,13 @@ const options = {
      rootMargin: '100px',
      threshold: 0.1
 }
+if (window.innerWidth < 350) {
+     let secondIframe = document.querySelectorAll('.secondVideo');
+     for (let index = 0; index < secondIframe.length; index++) {
+          secondIframe[index].classList.add('noAnim');
+     }
+}
+
 
 const observer = new IntersectionObserver(entries => {
      entries.forEach(entry => {
@@ -70,6 +77,7 @@ trigger.forEach(trigger => {
 //------------------------------------------
 
 const hamburger = document.getElementById('hamburgerContainer');
+const ham = document.querySelectorAll('.hamburger');
 const nav = document.querySelectorAll('.navDivs');
 const wall = document.getElementById('wall');
 
@@ -77,6 +85,8 @@ hamburger.addEventListener('click', () => {
      wall.classList.toggle('active');
      for (let index = 0; index < nav.length; index++) {
           nav[index].classList.toggle('active');
+          ham[index].classList.toggle('active');
+
      }
 
 })
@@ -86,8 +96,6 @@ hamburger.addEventListener('click', () => {
 
 
 
-for (let index = 0; index < 10; index++) {
-     console.log(index);
-     console.log('khami');
 
-}
+
+

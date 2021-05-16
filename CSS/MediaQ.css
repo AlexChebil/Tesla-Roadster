@@ -10,8 +10,8 @@
     overflow-y: hidden;
     position: absolute;
     display: block;
-    width: 100%;
-    height: 400%;
+    width: 120%;
+    height: 700%;
     z-index: 1;
     background-color: white;
     -webkit-animation: wallAnimation .25s ease-in-out;
@@ -86,11 +86,12 @@
     display: block;
     margin-bottom: 3em;
     border-bottom: 1px solid black;
+    width: 5em;
   }
   header .navDivs.active .secondUl {
-    background-color: aqua;
     position: absolute;
-    bottom: -9em;
+    bottom: -10em;
+    left: 40px;
   }
   header .hamburgerContainer {
     position: absolute;
@@ -106,6 +107,9 @@
     margin: 10% 0;
     margin-left: auto;
     margin-right: auto;
+  }
+  header .hamburger.active {
+    background-color: black;
   }
   header .headerFooter {
     -webkit-box-orient: vertical;
@@ -124,6 +128,10 @@
     -webkit-transform: translateY(-250px);
             transform: translateY(-250px);
   }
+  main .animTopImage1 {
+    -webkit-animation: standardAnimation .15s ease-in-out;
+            animation: standardAnimation .15s ease-in-out;
+  }
   main .trigger.active p {
     -webkit-transform: translateY(1em);
             transform: translateY(1em);
@@ -139,6 +147,12 @@
   main .trigger.active #topImg_2 {
     -webkit-transform: translateY(-1em);
             transform: translateY(-1em);
+    -webkit-animation-name: activeAnim;
+            animation-name: activeAnim;
+    -webkit-animation-duration: 6s;
+            animation-duration: 6s;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
   }
   main ul {
     margin-bottom: 10em;
@@ -161,6 +175,18 @@
   }
   main .interiorText {
     margin-bottom: 10%;
+  }
+  main .noAnim {
+    -webkit-transition: none !important;
+    transition: none !important;
+    -webkit-animation: none;
+            animation: none;
+  }
+  footer {
+    margin-top: -10em;
+  }
+  iframe {
+    width: 300px;
   }
 }
 

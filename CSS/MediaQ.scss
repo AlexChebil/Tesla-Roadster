@@ -11,11 +11,11 @@
                overflow-y: hidden;
                position: absolute;
                display: block;
-               width: 100%;
-               height: 400%;
+               width: 120%;
+               height: 700%;
                z-index: 1;
                background-color: rgb(255, 255, 255);
-               animation: wallAnimation .25s ease-in-out ;
+               animation: wallAnimation .25s ease-in-out;
           }
           @keyframes wallAnimation {
                0%{
@@ -59,6 +59,7 @@
                transition: ease-out;
                z-index: 2;
                font-size: 3em;
+              
                img{
                     display: none;
                }
@@ -70,12 +71,13 @@
                          display: block;
                          margin-bottom: 3em;
                          border-bottom: 1px solid rgb(0, 0, 0);
+                         width: 5em;
                     }
                }
                .secondUl{
-                    background-color: aqua;
                     position: absolute;
-                    bottom: -9em;
+                    bottom: -10em;
+                    left: 40px;
                }
                
                
@@ -96,6 +98,9 @@
                 margin-right: auto;
                }
           }
+          .hamburger.active{
+               background-color: rgb(0, 0, 0);
+          }
           .headerFooter{
                flex-direction: column;
                button{
@@ -113,7 +118,10 @@
      }
      main{
           transform: translateY(-250px);
-          .trigger.active{
+          .animTopImage1{
+               animation: standardAnimation .15s ease-in-out;
+          }
+          .trigger.active{       
                p{
                     transform: translateY(1em);
                     font-size: 0.813em;
@@ -127,6 +135,9 @@
                }
                #topImg_2{
                     transform: translateY(-1em);
+                    animation-name: activeAnim;
+                     animation-duration: 6s; 
+                         transition: ease-in-out; 
                }
           }
           ul{
@@ -154,9 +165,24 @@
           .interiorText{
                margin-bottom: 10%;
           }
-     }                
+          .noAnim{
+               -webkit-transition: none !important; 
+               -moz-transition: none !important; 
+               -o-transition: none !important; 
+               -ms-transition: none !important; 
+               transition: none !important; 
+               animation: none;
+          }
+     }      
      
-
+     footer{
+          margin-top: -10em;
+     }
+     
+     iframe{
+          width: 300px;
+     }
+     
 
 }
 
