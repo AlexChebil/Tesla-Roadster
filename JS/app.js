@@ -92,8 +92,19 @@ hamburger.addEventListener('click', () => {
 })
 
 
+let controller = new ScrollMagic.Controller();
 
+let timeline = new TimelineMax();
 
+timeline
+     .to('.h1', 2, { x: -400 });
+
+new ScrollMagic.Scene({
+     triggerElement: 'section'
+})
+
+     .setTween(timeline)
+     .addTo(controller);
 
 
 
