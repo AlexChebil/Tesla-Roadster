@@ -87,24 +87,26 @@ hamburger.addEventListener('click', () => {
           nav[index].classList.toggle('active');
           ham[index].classList.toggle('active');
 
+
      }
 
 })
 
+let ham1 = document.getElementById('ham1');
+let ham2 = document.getElementById('ham2');
+let ham3 = document.getElementById('ham3');
 
-let controller = new ScrollMagic.Controller();
-
-let timeline = new TimelineMax();
-
-timeline
-     .to('.h1', 2, { x: -400 });
-
-new ScrollMagic.Scene({
-     triggerElement: 'section'
+hamburger.addEventListener('click', function () {
+     ham1.classList.toggle('crossAnim');
+     ham2.classList.toggle('crossAnim');
+     ham3.classList.toggle('crossAnim');
 })
 
-     .setTween(timeline)
-     .addTo(controller);
+
+
+
+
+
 
 
 

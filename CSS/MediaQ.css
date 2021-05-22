@@ -80,7 +80,7 @@
   }
   header .navDivs.active ul {
     margin-top: 1em;
-    margin-left: -2em;
+    margin-left: -1em;
   }
   header .navDivs.active ul li {
     display: block;
@@ -187,6 +187,96 @@
   }
   iframe {
     width: 300px;
+  }
+  @-webkit-keyframes ham1Anim {
+    100% {
+      -webkit-transform: translateY(15px) rotate(-55deg) scale(0.8);
+              transform: translateY(15px) rotate(-55deg) scale(0.8);
+      border-radius: 2em;
+      -webkit-transition: ease-in-out;
+      transition: ease-in-out;
+    }
+  }
+  @keyframes ham1Anim {
+    100% {
+      -webkit-transform: translateY(15px) rotate(-55deg) scale(0.8);
+              transform: translateY(15px) rotate(-55deg) scale(0.8);
+      border-radius: 2em;
+      -webkit-transition: ease-in-out;
+      transition: ease-in-out;
+    }
+  }
+  @-webkit-keyframes ham2Anim {
+    100% {
+      opacity: 0;
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+      -webkit-transition: ease-in-out;
+      transition: ease-in-out;
+    }
+  }
+  @keyframes ham2Anim {
+    100% {
+      opacity: 0;
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+      -webkit-transition: ease-in-out;
+      transition: ease-in-out;
+    }
+  }
+  @-webkit-keyframes ham3Anim {
+    100% {
+      -webkit-transform: translateY(-15px) rotate(55deg) scale(0.8);
+              transform: translateY(-15px) rotate(55deg) scale(0.8);
+      border-radius: 2em;
+      -webkit-transition: ease-in-out;
+      transition: ease-in-out;
+    }
+  }
+  @keyframes ham3Anim {
+    100% {
+      -webkit-transform: translateY(-15px) rotate(55deg) scale(0.8);
+              transform: translateY(-15px) rotate(55deg) scale(0.8);
+      border-radius: 2em;
+      -webkit-transition: ease-in-out;
+      transition: ease-in-out;
+    }
+  }
+  #ham1.crossAnim {
+    -webkit-animation-name: ham1Anim;
+            animation-name: ham1Anim;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  #ham2.crossAnim {
+    -webkit-animation-name: ham2Anim;
+            animation-name: ham2Anim;
+    -webkit-animation-duration: .15s;
+            animation-duration: .15s;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  #ham3.crossAnim {
+    -webkit-animation-name: ham3Anim;
+            animation-name: ham3Anim;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
 }
 
