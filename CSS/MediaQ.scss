@@ -143,8 +143,8 @@
                #topImg_2{
                     transform: translateY(-1em);
                     animation-name: activeAnim;
-                     animation-duration: 6s; 
-                         transition: ease-in-out; 
+                    animation-duration: 6s; 
+                    transition: ease-in-out; 
                }
           }
           ul{
@@ -235,6 +235,7 @@
           transition: ease-in-out;
           animation-iteration-count: 1;
           animation-fill-mode: forwards;
+          
 
      }
      
@@ -263,24 +264,23 @@
 
 
 
-@media all and (min-width:401px) and (max-width:500px) {
+@media all and (min-width:401px) {
      body{
           overflow-x: hidden;
           width: 100%;
           //zoom: 50%;
           #wall{
                display: none;
-
           }
           #wall.active{
                overflow-y: hidden;
                position: absolute;
                display: block;
-               width: 100%;
-               height: 400%;
+               width: 120%;
+               height: 700%;
                z-index: 1;
-               background-color: rgb(141, 141, 141);
-               animation: wallAnimation .25s ease-in-out ;
+               background-color: rgb(255, 255, 255);
+               animation: wallAnimation .25s ease-in-out;
           }
           @keyframes wallAnimation {
                0%{
@@ -299,13 +299,15 @@
      header{
           background-image: url(../IMAGES/hero-mobile.jpg);
           background-size: 100%;
-          margin-bottom: 15%; 
-          h1{
-               padding-top: 16%;
-               padding-bottom: 30%;
+          .h1,h1{
+               padding-bottom: 28%;
                font-size: 4em;
           }
-
+          #quickestCar{
+               font-size: 1em;
+               margin-bottom: 2em;
+               
+          }
           #LogoImage{
                display: block;
                width: 40%;
@@ -322,27 +324,25 @@
                transition: ease-out;
                z-index: 2;
                font-size: 3em;
+              
                img{
                     display: none;
                }
                ul{
                     margin-top: 1em;
-                    display: block;
-                    position: relative;
-                    margin-left: auto;
-                    margin-right: auto;
-                    transform: translateX(-5em);
+                    transform: translateX(-1em);               
                    
                     li{
                          display: block;
                          margin-bottom: 3em;
                          border-bottom: 1px solid rgb(0, 0, 0);
+                         width: 5em;
                     }
                }
                .secondUl{
-                    display: inline-block;
-                    margin-top: 27em;
-                    margin-left: -12em;
+                    position: absolute;
+                    bottom: -10em;
+                    left: 55px;
                }
                
           }
@@ -356,31 +356,215 @@
                .hamburger{
                 width: 3.5em;
                 height: .5em;
-                background-color: rgb(73, 73, 73);
+                background-color: whitesmoke;
                 margin: 10% 0;
                 margin-left: auto;
                 margin-right: auto;
                }
-          }
-          .headerFooter{
-               .specs{
-                    .material-icons{
-                         margin: -3.75% -5.5%;;  
-                    }
+               .hamburger.active{
+                    background-color: black;
                }
           }
+
+          .headerFooter{
+               flex-direction: column;
+               transform: translateY(-2em);
+               line-height: 2em;
+               button{
+                    margin-left: auto;
+                    margin-right: auto;
+               }
+               .specs{
+                    .material-icons{
+                         margin: -4.75% -16.5%;  
+                    }
+               }
+               
+          }
+          .animationSign{
+               transform: translateY(-3em);
+          }
      }
+
      main{
+          transform: translateY(-9%);
           .trigger.active{
                #topImg_2{
                     transform: translateY(-3em);
                }
           }
+          ul{
+               margin: 0% -70%;
+               margin-bottom: 15%;
+          }
+          .backImgText{
+               h2{
+                    line-height: 2;
+                    letter-spacing: -0.066em;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-size: 1.8rem;
+                    transform: translateY(2em);
+               }
+
+               p{
+                    font-size: .7em;
+                    line-height: 1em;
+                    margin-top: 18em;
+               }
+          }
+          .interiorText{
+               margin-bottom: 10%;
+          }
+          .trigger.active{       
+               p{
+                    transform: translateY(1em);
+                    font-size: 0.813em;
+                    line-height: 1.1em;
+                    letter-spacing: -0.064em;
+                    font-weight: 400;
+               }
+               h3{
+                    transform: translateY(-8em);
+     
+               }
+               #topImg_2{
+                    transform: translateY(-1.25em);
+                    animation-name: activeAnim;
+                    animation-duration: 5s; 
+                    transition: ease-in-out;
+               }
+          }
+          .animTopImage1{
+               animation: standardAnimation .15s ease-in-out;
+          }
+
+     }
+     iframe{
+          width: 400px;
+     } 
+     
+     @keyframes ham1Anim {
+          
+          100%{
+               transform: translateY(15px) rotate(-55deg) scale(.8);
+               border-radius: 2em;
+               transition: ease-in-out;    
+          }
+     }
+
+     @keyframes ham2Anim {
+          100%{
+               opacity: 0;
+               transform: translateX(50px);
+               transition: ease-in-out;     
+          }
+     }
+     @keyframes ham3Anim {
+          100%{
+               transform: translateY(-15px) rotate(55deg) scale(.8);
+               border-radius: 2em;
+               transition: ease-in-out;    
+          }
+     }
+     #ham1.crossAnim{
+          animation-name: ham1Anim;
+          animation-duration: .5s; 
+          transition: ease-in-out;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+     }
+     #ham2.crossAnim{
+          animation-name: ham2Anim;
+          animation-duration: .15s; 
+          transition: ease-in-out;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+
+     }
+     #ham3.crossAnim{
+          animation-name: ham3Anim;
+          animation-duration: .5s; 
+          transition: ease-in-out;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+          
      }
             
 }
 
-@media all and (min-width:501px) and (max-width:1000px) {
+@media all and (min-width:500px) {
+     header{
+          .headerFooter{
+               .specs{
+                    line-height: 3em;       
+               }
+          }
+          .navDivs.active{
+               ul{
+                    transform: translateX(-2em);                   
+               }
+               .secondUl{      
+                    left: 150px;
+               }
+               
+          }
+     }
+     main{
+          .trigger.active{   
+               #topImg_2{
+                    transform: translateY(-1.5em); 
+               }  
+               p{
+                    transform: translateY(3em);
+               }
+               h3{
+                    transform: translateY(-9em);
+               }
+          }
+     }
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width:769) and (max-width:1024px) {
      header{
           background-image: url(../IMAGES/hero-mobile.jpg);
           background-size: 100% 120%;

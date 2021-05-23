@@ -280,7 +280,7 @@
   }
 }
 
-@media all and (min-width: 401px) and (max-width: 500px) {
+@media all and (min-width: 401px) {
   body {
     overflow-x: hidden;
     width: 100%;
@@ -292,10 +292,10 @@
     overflow-y: hidden;
     position: absolute;
     display: block;
-    width: 100%;
-    height: 400%;
+    width: 120%;
+    height: 700%;
     z-index: 1;
-    background-color: #8d8d8d;
+    background-color: white;
     -webkit-animation: wallAnimation .25s ease-in-out;
             animation: wallAnimation .25s ease-in-out;
   }
@@ -330,12 +330,14 @@
   header {
     background-image: url(../IMAGES/hero-mobile.jpg);
     background-size: 100%;
-    margin-bottom: 15%;
   }
-  header h1 {
-    padding-top: 16%;
-    padding-bottom: 30%;
+  header .h1, header h1 {
+    padding-bottom: 28%;
     font-size: 4em;
+  }
+  header #quickestCar {
+    font-size: 1em;
+    margin-bottom: 2em;
   }
   header #LogoImage {
     display: block;
@@ -360,22 +362,19 @@
   }
   header .navDivs.active ul {
     margin-top: 1em;
-    display: block;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    -webkit-transform: translateX(-5em);
-            transform: translateX(-5em);
+    -webkit-transform: translateX(-1em);
+            transform: translateX(-1em);
   }
   header .navDivs.active ul li {
     display: block;
     margin-bottom: 3em;
     border-bottom: 1px solid black;
+    width: 5em;
   }
   header .navDivs.active .secondUl {
-    display: inline-block;
-    margin-top: 27em;
-    margin-left: -12em;
+    position: absolute;
+    bottom: -10em;
+    left: 55px;
   }
   header .hamburgerContainer {
     position: absolute;
@@ -387,21 +386,210 @@
   header .hamburgerContainer .hamburger {
     width: 3.5em;
     height: .5em;
-    background-color: #494949;
+    background-color: whitesmoke;
     margin: 10% 0;
     margin-left: auto;
     margin-right: auto;
   }
+  header .hamburgerContainer .hamburger.active {
+    background-color: black;
+  }
+  header .headerFooter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translateY(-2em);
+            transform: translateY(-2em);
+    line-height: 2em;
+  }
+  header .headerFooter button {
+    margin-left: auto;
+    margin-right: auto;
+  }
   header .headerFooter .specs .material-icons {
-    margin: -3.75% -5.5%;
+    margin: -4.75% -16.5%;
+  }
+  header .animationSign {
+    -webkit-transform: translateY(-3em);
+            transform: translateY(-3em);
+  }
+  main {
+    -webkit-transform: translateY(-9%);
+            transform: translateY(-9%);
   }
   main .trigger.active #topImg_2 {
     -webkit-transform: translateY(-3em);
             transform: translateY(-3em);
   }
+  main ul {
+    margin: 0% -70%;
+    margin-bottom: 15%;
+  }
+  main .backImgText h2 {
+    line-height: 2;
+    letter-spacing: -0.066em;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.8rem;
+    -webkit-transform: translateY(2em);
+            transform: translateY(2em);
+  }
+  main .backImgText p {
+    font-size: .7em;
+    line-height: 1em;
+    margin-top: 18em;
+  }
+  main .interiorText {
+    margin-bottom: 10%;
+  }
+  main .trigger.active p {
+    -webkit-transform: translateY(1em);
+            transform: translateY(1em);
+    font-size: 0.813em;
+    line-height: 1.1em;
+    letter-spacing: -0.064em;
+    font-weight: 400;
+  }
+  main .trigger.active h3 {
+    -webkit-transform: translateY(-8em);
+            transform: translateY(-8em);
+  }
+  main .trigger.active #topImg_2 {
+    -webkit-transform: translateY(-1.25em);
+            transform: translateY(-1.25em);
+    -webkit-animation-name: activeAnim;
+            animation-name: activeAnim;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+  }
+  main .animTopImage1 {
+    -webkit-animation: standardAnimation .15s ease-in-out;
+            animation: standardAnimation .15s ease-in-out;
+  }
+  iframe {
+    width: 400px;
+  }
+  @-webkit-keyframes ham1Anim {
+    100% {
+      -webkit-transform: translateY(15px) rotate(-55deg) scale(0.8);
+              transform: translateY(15px) rotate(-55deg) scale(0.8);
+      border-radius: 2em;
+      -webkit-transition: ease-in-out;
+      transition: ease-in-out;
+    }
+  }
+  @keyframes ham1Anim {
+    100% {
+      -webkit-transform: translateY(15px) rotate(-55deg) scale(0.8);
+              transform: translateY(15px) rotate(-55deg) scale(0.8);
+      border-radius: 2em;
+      -webkit-transition: ease-in-out;
+      transition: ease-in-out;
+    }
+  }
+  @-webkit-keyframes ham2Anim {
+    100% {
+      opacity: 0;
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+      -webkit-transition: ease-in-out;
+      transition: ease-in-out;
+    }
+  }
+  @keyframes ham2Anim {
+    100% {
+      opacity: 0;
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+      -webkit-transition: ease-in-out;
+      transition: ease-in-out;
+    }
+  }
+  @-webkit-keyframes ham3Anim {
+    100% {
+      -webkit-transform: translateY(-15px) rotate(55deg) scale(0.8);
+              transform: translateY(-15px) rotate(55deg) scale(0.8);
+      border-radius: 2em;
+      -webkit-transition: ease-in-out;
+      transition: ease-in-out;
+    }
+  }
+  @keyframes ham3Anim {
+    100% {
+      -webkit-transform: translateY(-15px) rotate(55deg) scale(0.8);
+              transform: translateY(-15px) rotate(55deg) scale(0.8);
+      border-radius: 2em;
+      -webkit-transition: ease-in-out;
+      transition: ease-in-out;
+    }
+  }
+  #ham1.crossAnim {
+    -webkit-animation-name: ham1Anim;
+            animation-name: ham1Anim;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  #ham2.crossAnim {
+    -webkit-animation-name: ham2Anim;
+            animation-name: ham2Anim;
+    -webkit-animation-duration: .15s;
+            animation-duration: .15s;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  #ham3.crossAnim {
+    -webkit-animation-name: ham3Anim;
+            animation-name: ham3Anim;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
 }
 
-@media all and (min-width: 501px) and (max-width: 1000px) {
+@media all and (min-width: 500px) {
+  header .headerFooter .specs {
+    line-height: 3em;
+  }
+  header .navDivs.active ul {
+    -webkit-transform: translateX(-2em);
+            transform: translateX(-2em);
+  }
+  header .navDivs.active .secondUl {
+    left: 150px;
+  }
+  main .trigger.active #topImg_2 {
+    -webkit-transform: translateY(-1.5em);
+            transform: translateY(-1.5em);
+  }
+  main .trigger.active p {
+    -webkit-transform: translateY(3em);
+            transform: translateY(3em);
+  }
+  main .trigger.active h3 {
+    -webkit-transform: translateY(-9em);
+            transform: translateY(-9em);
+  }
+}
+
+@media all and (min-width: 769) and (max-width: 1024px) {
   header {
     background-image: url(../IMAGES/hero-mobile.jpg);
     background-size: 100% 120%;
