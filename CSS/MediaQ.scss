@@ -33,9 +33,9 @@
      header{
           background-image: url(../IMAGES/hero-mobile.jpg);
           background-size: 100% 73%;
-          h1{
+          h1, .h1{
                padding-bottom: 16%;
-               font-size: 4em;
+               font-size: 4em;    
           }
           #quickestCar{
                white-space: pre;
