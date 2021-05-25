@@ -280,7 +280,7 @@
   }
 }
 
-@media all and (min-width: 401px) {
+@media all and (min-width: 401px) and (max-width: 500px) {
   body {
     overflow-x: hidden;
     width: 100%;
@@ -332,7 +332,7 @@
     background-size: 100%;
   }
   header .h1, header h1 {
-    padding-bottom: 28%;
+    padding-bottom: 25%;
     font-size: 4em;
   }
   header #quickestCar {
@@ -401,18 +401,18 @@
             flex-direction: column;
     -webkit-transform: translateY(-2em);
             transform: translateY(-2em);
-    line-height: 2em;
+    line-height: 2.5em;
   }
   header .headerFooter button {
     margin-left: auto;
     margin-right: auto;
   }
   header .headerFooter .specs .material-icons {
-    margin: -4.75% -16.5%;
+    margin: -3.75% -17.5%;
   }
   header .animationSign {
-    -webkit-transform: translateY(-3em);
-            transform: translateY(-3em);
+    -webkit-transform: translateY(-5.5em) translateX(7em);
+            transform: translateY(-5.5em) translateX(7em);
   }
   main {
     -webkit-transform: translateY(-9%);
@@ -564,32 +564,7 @@
   }
 }
 
-@media all and (min-width: 500px) {
-  header .headerFooter .specs {
-    line-height: 3em;
-  }
-  header .navDivs.active ul {
-    -webkit-transform: translateX(-2em);
-            transform: translateX(-2em);
-  }
-  header .navDivs.active .secondUl {
-    left: 150px;
-  }
-  main .trigger.active #topImg_2 {
-    -webkit-transform: translateY(-1.5em);
-            transform: translateY(-1.5em);
-  }
-  main .trigger.active p {
-    -webkit-transform: translateY(3em);
-            transform: translateY(3em);
-  }
-  main .trigger.active h3 {
-    -webkit-transform: translateY(-9em);
-            transform: translateY(-9em);
-  }
-}
-
-@media all and (min-width: 769) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1024px) {
   header {
     background-image: url(../IMAGES/hero-mobile.jpg);
     background-size: 100% 120%;
@@ -634,7 +609,7 @@
   }
 }
 
-@media all and (min-width: 1001px) and (max-width: 1439px) {
+@media all and (min-width: 1025px) and (max-width: 1439px) {
   header {
     background-size: 100%;
     margin-bottom: -35%;

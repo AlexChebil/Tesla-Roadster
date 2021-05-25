@@ -264,7 +264,7 @@
 
 
 
-@media all and (min-width:401px) {
+@media all and (min-width:401px) and (max-width:500px) {
      body{
           overflow-x: hidden;
           width: 100%;
@@ -300,7 +300,7 @@
           background-image: url(../IMAGES/hero-mobile.jpg);
           background-size: 100%;
           .h1,h1{
-               padding-bottom: 28%;
+               padding-bottom: 25%;
                font-size: 4em;
           }
           #quickestCar{
@@ -369,20 +369,20 @@
           .headerFooter{
                flex-direction: column;
                transform: translateY(-2em);
-               line-height: 2em;
+               line-height: 2.5em;
                button{
                     margin-left: auto;
                     margin-right: auto;
                }
                .specs{
                     .material-icons{
-                         margin: -4.75% -16.5%;  
+                         margin: -3.75% -17.5%;  
                     }
                }
                
           }
           .animationSign{
-               transform: translateY(-3em);
+               transform: translateY(-5.5em) translateX(7em);
           }
      }
 
@@ -493,38 +493,6 @@
             
 }
 
-@media all and (min-width:500px) {
-     header{
-          .headerFooter{
-               .specs{
-                    line-height: 3em;       
-               }
-          }
-          .navDivs.active{
-               ul{
-                    transform: translateX(-2em);                   
-               }
-               .secondUl{      
-                    left: 150px;
-               }
-               
-          }
-     }
-     main{
-          .trigger.active{   
-               #topImg_2{
-                    transform: translateY(-1.5em); 
-               }  
-               p{
-                    transform: translateY(3em);
-               }
-               h3{
-                    transform: translateY(-9em);
-               }
-          }
-     }
-     
-}
 
 
 
@@ -564,7 +532,7 @@
 
 
 
-@media all and (min-width:769) and (max-width:1024px) {
+@media all and (min-width:768px) and (max-width:1024px) {
      header{
           background-image: url(../IMAGES/hero-mobile.jpg);
           background-size: 100% 120%;
@@ -613,7 +581,7 @@
      }
 }
 
-@media all and (min-width:1001px) and (max-width:1439px) {
+@media all and (min-width:1025px) and (max-width:1439px) {
      header{
           background-size: 100%;
           h1{
